@@ -1,0 +1,103 @@
+body {
+    margin :0 auto;
+    padding :0;
+    font-family: Verdana;
+    background:rgba(0, 0, 0, 0.05);
+}
+
+.container-pro{
+    display: flex;
+    flex-direction: column;
+    margin-top:2em
+
+}
+
+header{
+    background-color: lightpink;
+    padding: 1em;
+    color: white;
+}
+
+.container{
+    display: block;
+    margin : 1em auto;
+    padding : 2rem 1rem;
+    width : 60%;
+    height: 80%;
+    max-width : 400px;
+    max-height: 400px;
+    border : solid #eeee;
+    border-radius : 2em;
+    background-color: white;
+    
+}
+
+
+@media  (min-width: 785px) {
+
+    .container-pro{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container{
+        margin : 1em 1em;
+    }
+
+  }
+
+img{
+    display : inline;
+    margin :0 auto;
+    height: 100%;
+    width : auto;
+    max-width:50%;
+    max-height:50%;
+}
+
+.img-container{
+    width : 40%;
+    height : 40%;
+    max-width:50%;
+    max-height:50%;
+    border-radius : 50%;
+    margin : auto ;
+    display : block;
+    /* box-shadow : 0.2rem 0.2rem 0.5rem lightgrey */
+    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+h1, h2, h3, h4, p{
+    text-align : center;
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom : 0;
+    padding : 0 0;
+}
+
+h4{
+    color : darkgray;
+    margin : 0 0;
+    padding : 0 0;
+}
+
+button {
+    display: block;
+    margin : auto;
+}
+
+.btn{
+    background-image : linear-gradient(to right, purple,  blue);
+    color : white;
+    padding : 0.2rem 2rem;
+    font-size : 1.5em;
+    border : none;
+    border-radius : 6rem;
+    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
