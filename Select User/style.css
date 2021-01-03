@@ -39,14 +39,12 @@ p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width :100%
 }
 
 img{
     width : 40%;
     margin : auto ;
     display : block;
-    min-width : 70px
 }
 
 .img-container{
