@@ -39,6 +39,7 @@ p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width :100%
 }
 
 img{
@@ -59,7 +60,7 @@ img{
     padding: 1em 0.5em;
     margin: 1em;
     max-height: 30%;
-    max-width: 60%;
+    max-width: 80%;
     border-radius: 1em;
     display: flex;
     align-items: center;
