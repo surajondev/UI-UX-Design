@@ -42,19 +42,13 @@ p{
 }
 
 img{
-    width : 40%;
+    width : 45%;
     margin : auto ;
     display : block;
     min-width : 70px
 }
 
 .img-container{
-    border-radius : 50%;
-    margin : auto ;
-    display : block;
-}
-
-.img-container-new{
     border-radius : 50%;
     margin : auto ;
     display : block;
