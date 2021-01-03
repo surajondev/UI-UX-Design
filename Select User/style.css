@@ -1,0 +1,111 @@
+body {
+    margin :0 auto;
+    padding :0;
+    font-family: Gill Sans MT;
+    background:#5E6D87;
+    color:white;
+}
+
+header{
+    background-color: #1A1A2A;
+    padding: 1em;
+    color: white;
+}
+
+
+.container{
+    display :flex;
+    flex-direction: column;
+    margin:1em auto;
+    height : 100%;
+    width:80%;
+    padding: 1em;
+    max-width: 800px;
+    background-color:#1A1A2A;
+    border-radius: 1em;
+}
+
+h1,h3,p{
+    text-align: center;
+}
+
+p{
+    font-family: Iron Fist;
+    font-size: 1.2em;
+}
+
+.container-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width : 40%;
+    margin : auto ;
+    display : block;
+    min-width : 70px
+}
+
+.img-container{
+    border-radius : 50%;
+    margin : auto ;
+    display : block;
+}
+
+.img-container-new{
+    border-radius : 50%;
+    margin : auto ;
+    display : block;
+}
+
+.user{
+    background-color: #5E6D87;
+    padding: 1em 0.5em;
+    margin: 1em;
+    max-height: 30%;
+    max-width: 60%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    max-width:70%;
+    display: inline-block;
+    
+}
+
+.user-name{
+    margin-bottom: 0;
+}
+
+.user-name-botton{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+span{
+    color : #1A1A2A;
+    font-weight: bold;
+}
+
+@media(min-width : 676px){
+    .container-user{
+        flex-direction: row;
+    }
+    .user{
+        flex-direction: column;
+        padding : 2em 1em;
+        height : 60%;
+        width :30%
+    }
+    img{
+        width : 80%;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
