@@ -1,0 +1,191 @@
+body {
+    margin :0 auto;
+    padding :0;
+    font-family: Verdana;
+    background:rgba(0, 0, 0, 0.05);
+}
+
+.container-pro{
+    display: flex;
+    flex-direction: column;
+    margin-top:2em
+
+}
+
+header{
+    background-color: lightpink;
+    padding: 1em;
+    color: white;
+}
+
+.container{
+    display: block;
+    margin : 1em auto;
+    width : 100%;
+    height: 80%;
+    max-width : 100%;
+    max-height: 400px;
+    border : solid #eeee;
+    background-color: white;
+    
+}
+
+
+@media  (min-width: 785px) {
+
+    .container-pro{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container{
+        margin : 1em 1em;
+    }
+
+  }
+
+ 
+
+
+h1, h2, h3, h4, p{
+    text-align : center;
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom : 0;
+    padding : 0 0;
+}
+
+h4{
+    color : darkgray;
+    margin : 0 0;
+    padding : 0 0;
+}
+
+.sub-heading
+{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: none;
+  }
+  
+  .primary-btn
+  {
+      background-color: #007bff;
+  }
+
+  .secondary-btn
+  {
+      background-color: #6c757d;
+  }
+
+  .success-btn
+  {
+      background-color: #28A745;
+  }
+  .danger-btn
+  {
+      background-color: #DC3545;
+  }
+  .info-btn
+  {
+      background-color: #17A2BB;
+  }
+  .light-btn
+  {
+      background-color: #6c757d;
+  }
+  .dark-btn
+  {
+      background-color: #343A40;
+  }
+  .link-btn
+  {
+      background-color: white;
+      color: #007BFF;
+  }
+  .warning-btn
+  {
+      background-color: #FFC107;
+  }
+
+
+  .primary-outline-btn
+  {
+      color: #007bff;
+      border: 2px solid #007bff;
+  }
+
+  .secondary-outline-btn
+  {
+      color: #6c757d;
+      border: 2px solid #6c757d;
+  }
+
+  .success-outline-btn
+  {
+      color: #28A745;
+      border: 2px solid #28A745;
+  }
+  .danger-outline-btn
+  {
+      color: #DC3545;
+      border: 2px solid #DC3545;
+  }
+  .info-outline-btn
+  {
+      color: #17A2BB;
+      border: 2px solid #17A2BB;
+  }
+  .light-outline-btn
+  {
+      color: #6c757d;
+      border: 2px solid #6c757d;
+  }
+  .dark-outline-btn
+  {
+      color: #343A40;
+      border: 2px solid #343A40;
+  }
+  .link-outline-btn
+  {
+   border: 2px solid #007BFF;     
+   color: #007BFF;
+  }
+  .warning-outline-btn
+  {
+      color: #FFC107;
+      border: 2px solid #FFC107;
+  }
+
+  .btn-large
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .btn-small
+  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
