@@ -18,10 +18,12 @@
   }
   
   .header {
+    background-color: rgb(43, 53, 66);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 8%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -91,6 +93,7 @@
   }
   
   .banner {
+    margin-top: 10%;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -102,7 +105,7 @@
   
   .banner::after {
     content: "";
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(59, 72, 90);
     height: 100vh;
     position: absolute;
     width: 100%;
