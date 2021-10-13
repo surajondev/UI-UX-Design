@@ -89,6 +89,7 @@ h4{
 button {
     display: block;
     margin : auto;
+    cursor: pointer;
 }
 
 .btn{

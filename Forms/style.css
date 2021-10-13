@@ -74,6 +74,7 @@ button{
     padding: 1em 2em;
     font-weight: bold;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .btn{
