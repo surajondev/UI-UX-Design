@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: url('https://images.unsplash.com/photo-1502514276381-1ea51dfe201c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1965&q=80') no-repeat center center/cover;
+
+    }
+
+    .container {
+        width: 80%;
+        height: 70vh;
+        margin: auto;
+        margin-top: 15vh;
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    
+    #img1 {
+        border: 4px solid white;
+        border-left-width: 8px;
+        border-right-width: 8px;
+        box-shadow: 2px 2px 2px 2px black;
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 5;
+        background: url('https://images.unsplash.com/photo-1580502304784-8985b7eb7260?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80')no-repeat center center/cover;
+        transition: 2s all;
+    }
+
+    #img1.active {
+        width: 0;
+    }
+
+    #img2 {
+        border-left-width: 8px;
+        border-right-width: 8px;
+        border: 4px solid white;
+        box-shadow: 2px 2px 2px 2px black;
+        box-sizing: border-box;
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        z-index: 4;
+        transition: 2s all;
+        background: url('https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80')no-repeat center center/cover;
+    }
+
+    #img2.active {
+        width: 0;
+    }
+
+    #img3 {
+        border-left-width: 8px;
+        border-right-width: 8px;
+        border: 4px solid white;
+        box-shadow: 2px 2px 2px 2px black;
+        box-sizing: border-box;
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        z-index: 3;
+        transition: 2s all;
+        background: url('https://images.unsplash.com/photo-1504512485720-7d83a16ee930?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1204&q=80')no-repeat center center/cover;
+    }
+
+    #img3.active {
+        width: 0;
+    }
+
+    #img4 {
+        border-left-width: 8px;
+        border-right-width: 8px;
+        border: 4px solid white;
+        box-shadow: 2px 2px 2px 2px black;
+        box-sizing: border-box;
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        z-index: 2;
+        transition: 2s all;
+        background: url('https://images.unsplash.com/photo-1506877339221-ede41280a7a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80')no-repeat center center/cover;
+    }
+
+    #img4.active {
+        width: 0;
+    }
+
+    #img5 {
+        border-left-width: 8px;
+        border-right-width: 8px;
+        border: 4px solid white;
+        box-shadow: 2px 2px 2px 2px black;
+        box-sizing: border-box;
+        width: 80%;
+        height: 70vh;
+        position: absolute;
+        z-index: 1;
+        transition: 2s all;
+        background: url('https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')no-repeat center center/cover;
+    }
+
+    #img5.active {
+        width: 0;
+    }
+
+    #leftswap {
+
+        position: absolute;
+        z-index: 6;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        
+        margin-left: 90%;
+        margin-top: 17%;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    #rightswap {
+        position: absolute;
+        z-index: 6;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        margin-top: 17%;
+        margin-left: 0%;
+       
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+    .fas{
+       font-size: xx-large;
+       color: white;
+       opacity: 0.5;
+    }
+    .indcatr{
+        width: fit-content;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .fa-circle{
+        font-size: large;
+  
+    }
+    #first.active{
+        opacity: 0.8;
+    }
+    #sec.active{
+        opacity: 0.8;
+    }
+    #trd.active{
+        opacity: 0.8;
+    }
+    #frt.active{
+        opacity: 0.8;
+    }
+    #fiv.active{
+        opacity: 0.8;
+    }
+
+    /* 
+     @keyframes slider{
+         0%{background: url('https://images.unsplash.com/photo-1593417376544-4c4201061e22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1025&q=80');}
+         20%{background: url('https://images.unsplash.com/photo-1535480308390-3c63d2701aa3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80');}
+         40%{background: url('https://images.unsplash.com/photo-1587300533914-9aaeb48205e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80');}
+         60%{background: url('https://images.unsplash.com/photo-1549468057-5b7fa1a41d7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80');}
+         80%{background: url('https://images.unsplash.com/photo-1591700430569-9469d38b1006?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1328&q=80');}
+        } */
+</style>
+
+<body>
+    <button id="leftswap">
+        <i class="fas fa-angle-right"></i>
+    </button>
+
+    <button id="rightswap">
+        <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="container">
+
+        <div class="image" id="img1">
+
+        </div>
+        <div class="image" id="img2">
+
+        </div>
+        <div class="image" id="img3">
+
+        </div>
+        <div class="image" id="img4">
+
+        </div>
+        <div class="image" id="img5">
+
+        </div>
+    </div>
+
+    <div class="indcatr">
+        <div ><i id="first"  class=" dot fas fa-circle active"></i></div>
+        <div ><i id="sec" class="dot fas fa-circle"></i></div>
+        <div ><i id="trd" class="dot fas fa-circle"></i></div>
+        <div ><i  id="frt" class="dot fas fa-circle"></i></div>
+        <div  ><i id="fiv" class="dot fas fa-circle"></i></div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/63ac9b11ad.js" crossorigin="anonymous"></script>
+<script>
+    let images = document.getElementsByClassName("image");
+
+    const btn1 = document.getElementById("leftswap");
+    const btn2 = document.getElementById("rightswap");
+
+    const indicator=document.getElementsByClassName("dot");
+
+    btn1.addEventListener('click', function rightswap() {
+        let flag1 = true;
+        let count=0;
+
+        Array.from(images).forEach(image => {
+            count+=1;
+            if (image.classList.length === 1 && flag1) {
+                console.log("rightswap");
+                image.classList.add("active");
+
+                const element = indicator[count];
+                const element2=indicator[count-1];
+                console.log(element2);
+                console.log(element);
+
+                element.classList.add("active");
+                element2.classList.remove("active");
+                
+                flag1 = false;
+            }
+
+        })
+    });
+
+
+
+    btn2.addEventListener('click', function leftswap() {
+        let flag2 = true;
+
+
+        for (let index = images.length - 1; index >= 0; index--) {
+            if (flag2 && images[index].classList.length === 2) {
+               
+                const element = images[index];
+                element.classList.remove("active");
+                indicator[index].classList.add("active");
+                if(index<4){
+                    indicator[index+1].classList.remove("active");
+                }
+                flag2 = false;
+            }
+        }
+
+
+    });
+
+</script>
+
+</html>
