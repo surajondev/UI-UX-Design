@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +8,101 @@
     font-family: "Poppins", sans-serif;
 }
 
-html {
+body {
     background: url('images/5726840.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 162vh;
+    min-height: 120vh;
 }
 
 a {
     text-decoration: none;
 }
 
-.header {
+.header__logo {
+    background: url('images/Logo.ico');
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* code that gives styling to the nav items */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #e882a7;
+}
+
+/* code to give styling to the menu toggler for mobile */
+.navbar-light .navbar-toggler {
+    background-color: #e882a7;
+}
+
+.banner {
+    margin-top: 6%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0 0;
+}
+
+h4 {
+    color: darkgray;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.btn {
+    display: block;
+    margin: 2em auto;
+    cursor: pointer;
+    background: #ED84A5;
+    width: 250px;
+    color: white;
+    padding: 0.2rem 2rem;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4rem;
+}
+
+.btn:hover {
+    background: #ED84A5;
+    opacity: 0.73;
+}
+
+/* all the below code is commented out due to no use */
+/* .header {
     position: fixed;
     top: 30px;
     left: 0;
@@ -105,23 +188,17 @@ a {
 
 .header.sticky .header__logo {
     color: #000;
-}
+} */
 
-.banner {
-    margin-top: 10%;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
+/* 
 .banner::after {
     content: "";
     height: 100vh;
     position: absolute;
     width: 100%;
-}
+} */
 
-@media only screen and (max-width: 785px) {
+/* @media only screen and (max-width: 785px) {
     .header__logo {
         display: none;
     }
@@ -142,54 +219,4 @@ a {
     .header__link {
         margin: 2.5rem 0;
     }
-}
-
-img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-    max-width: 50%;
-    max-height: 50%;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2em;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    padding: 0 0;
-}
-
-h4 {
-    color: darkgray;
-    margin: 0 0;
-    padding: 0 0;
-}
-
-.btn {
-    display: block;
-    margin: 2em auto;
-    cursor: pointer;
-    background: #ED84A5;
-    width: 250px;
-    color: white;
-    padding: 0.2rem 2rem;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 4rem;
-}
-
-.btn:hover {
-    background: #ED84A5;
-    opacity: 0.73;
-}
+} */
