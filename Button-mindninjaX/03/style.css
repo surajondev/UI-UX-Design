@@ -1,0 +1,123 @@
+body {
+    background: #ffffff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #c2c2c2;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 24px;
+  }
+  
+  .btn-1,
+  .btn-2 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* Created by http://grohit.com/  */
+  footer a,
+  .btn-1 a,
+  .btn-2 a {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  span {
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+  }
+  
+  /* Button 1 styles */
+  
+  .btn-1 a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    /*100% plus double the times left values*/
+    height: calc(100% - 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-1 a:hover::before,
+  .btn-2 a:hover::before {
+    transform: scaleY(0);
+  }
+  
+  .btn-1 a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  /* Created by http://grohit.com/  */
+  
+  .btn-1 a:hover::after,
+  .btn-2 a:hover::after {
+    transform: scaleX(0);
+  }
+  
+  /* Button 2 styles */
+  
+  .btn-2 a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a:hover {
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  
+  /* Created by http://grohit.com/  */
+  footer{
+      text-align: center;
+    font-size: 10px;
+  }
