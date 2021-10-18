@@ -21,3 +21,4 @@
 - Improving UI
 - Mobile Compatibility
 
+| Kehinde Adegoke      | [@amazinkenny](https://github.com/Amazinkenny)            |         1        |
