@@ -1,0 +1,12 @@
+.carousel-control-prev-icon{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.carousel-control-next-icon{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.carousel-inner{
+    background-size: cover;
+    background-position: top;
+}
