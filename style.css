@@ -6,21 +6,105 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  
-  a {
+}
+
+body {
+    background: url('images/5726840.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+}
+
+a {
     text-decoration: none;
-  }
-  
-  body {
-    background: rgb(59, 72, 90);
-    min-height: 200vh;
-  }
-  
-  .header {
-    background-color: rgb(43, 53, 66);
+}
+
+.header__logo {
+    background: url('images/Logo.ico');
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+/* code that gives styling to the nav items */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #e882a7;
+}
+
+/* code to give styling to the menu toggler for mobile */
+.navbar-light .navbar-toggler {
+    background-color: #e882a7;
+}
+
+.banner {
+    margin-top: 6%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0 0;
+}
+
+h4 {
+    color: darkgray;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.btn {
+    display: block;
+    margin: 2em auto;
+    cursor: pointer;
+    background: #ED84A5;
+    width: 250px;
+    color: white;
+    padding: 0.2rem 2rem;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4rem;
+}
+
+.btn:hover {
+    background: #ED84A5;
+    opacity: 0.73;
+}
+
+/* all the below code is commented out due to no use */
+/* .header {
     position: fixed;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 8%;
@@ -37,170 +121,102 @@
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 100000;
-  }
-  
-  .header__logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.header__logo {
+    background: url('images/Logo.ico');
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-  }
-  
-  .header__nav {
+}
+
+.header__nav {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-  
-  .header__list {
+}
+
+.header__list {
     position: relative;
     list-style: none;
-  }
-  
-  .header__link {
+    margin-left: 5rem;
+}
+
+.header__link {
     position: relative;
     margin: 0 15px;
     color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-weight: 500px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     cursor: pointer;
-  }
-  
-  .header.sticky {
+}
+
+.header__link:hover {
+    color: rgba(255, 255, 255, 0.44);
+}
+
+.header.sticky {
     padding: 5px 100px;
     background: #fff;
-  }
-  
-  .header.sticky .header__link {
+}
+
+.header.sticky .header__link {
     color: #000;
-  }
-  
-  .header.sticky .header__logo {
+}
+
+.header.sticky .header__logo {
     color: #000;
-  }
-  
-  .banner {
-    margin-top: 10%;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url("../img/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  
-  .banner::after {
+} */
+
+/* 
+.banner::after {
     content: "";
-    background-color: rgb(59, 72, 90);
     height: 100vh;
     position: absolute;
     width: 100%;
-  }
+} */
 
-
-.container-pro{
-    display: flex;
-    flex-direction: column;
-    margin-top:2em
-
-}
-
-.container{
-    display: block;
-    margin : 1em auto;
-    padding : 2rem 1rem;
-    width : 60%;
-    height: 80%;
-    max-width : 400px;
-    max-height: 400px;
-    border : solid #eeee;
-    border-radius : 2em;
-    background-color: white;
-    
-}
-
-
-@media  (min-width: 785px) {
-
-    .container-pro{
-        flex-direction: row;
-        justify-content: space-evenly;
+/* @media only screen and (max-width: 785px) {
+    .header__logo {
+        display: none;
     }
-
-    .container{
-        margin : 1em 1em;
+    .header__nav {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
-  }
-
-img{
-    display : inline;
-    margin :0 auto;
-    height: 100%;
-    width : auto;
-    max-width:50%;
-    max-height:50%;
-}
-
-.img-container{
-    width : 40%;
-    height : 40%;
-    max-width:50%;
-    max-height:50%;
-    border-radius : 50%;
-    margin : auto ;
-    display : block;
-    /* box-shadow : 0.2rem 0.2rem 0.5rem lightgrey */
-    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-h1, h2, h3, h4, p{
-    color: white;
-    text-align : center;
-}
-
-h2{
-    font-size: 2em;
-    margin-top: 1rem;
-    margin-bottom : 0;
-    padding : 0 0;
-}
-
-h4{
-    color : darkgray;
-    margin : 0 0;
-    padding : 0 0;
-}
-
-button {
-    display: block;
-    margin : 2em auto;
-    cursor: pointer;
-}
-
-.btn{
-    background-image : linear-gradient(to right, rgb(87, 73, 87),  rgb(25, 25, 31));
-    color : white;
-    padding : 0.2rem 2rem;
-    font-size : 1.5em;
-    border : none;
-    border-radius : 4rem;
-    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
+    .header__nav.active {
+        left: 0;
+    }
+    .header__link {
+        margin: 2.5rem 0;
+    }
+} */
