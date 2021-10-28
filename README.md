@@ -1,6 +1,7 @@
 # UI-UX-Design
 
-This is not something using any framework and I think in future I am not going to add any javasscript too.
+The Repository is created to encourage developers to create UI component. This component is created in the main directory with the name of the component.
+If you want to create same component with different style make sure to use your name after name of directory.
 
 ### This is for CSS lover who want to learn UI/UX Designs
 
