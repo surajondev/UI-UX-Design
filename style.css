@@ -19,6 +19,21 @@ body {
 a {
     text-decoration: none;
 }
+.header{
+  background: #1B2430;
+  color: white;
+}
+
+.one {
+  color: #4cc9f0;
+}
+
+.one:hover {
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+}
 
 .header__logo {
     background: url('images/Logo.ico');
@@ -190,7 +205,7 @@ h4 {
     color: #000;
 } */
 
-/* 
+/*
 .banner::after {
     content: "";
     height: 100vh;
