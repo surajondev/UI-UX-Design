@@ -27,7 +27,7 @@ header{
     max-height: 400px;
     border : solid #eeee;
     background-color: white;
-    
+
 }
 
 
@@ -44,7 +44,7 @@ header{
 
   }
 
- 
+
 
 
 h1, h2, h3, h4, p{
@@ -83,15 +83,15 @@ h4{
     font-size: 16px;
     margin: 4px 2px;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
   }
 
   .btn:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
- 
-  
+
+
 
   .primary-btn
   {
@@ -173,7 +173,7 @@ h4{
   }
   .link-outline-btn
   {
-   border: 2px solid #007BFF;     
+   border: 2px solid #007BFF;
    color: #007BFF;
   }
   .warning-outline-btn
@@ -196,4 +196,15 @@ h4{
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .btn-animation:hover
+  {
+    transform: scale(1.0);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    border: 2px solid #007bff;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 16px;
   }
