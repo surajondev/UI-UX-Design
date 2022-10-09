@@ -15,6 +15,7 @@ body {
 header{
     background-color: lightpink;
     padding: 1em;
+   
     color: white;
 }
 
@@ -29,7 +30,9 @@ header{
     border : solid #eeee;
     border-radius : 2em;
     background-color: white;
-    
+    /* //added the box box-shadow: ; */
+    box-shadow: -6px -6px 20px rgb(230, 130, 130), 6px 6px 20px rgba(231, 21, 21, 0.1);
+
 }
 
 
