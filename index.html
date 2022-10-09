@@ -1,214 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- bootstrap cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI-UX-Designs</title>
-  </head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img id="logo" src="/images/Full-Logo.png" alt="UI-UX-Designs Logo" width="143" height="82">
+        </a>
+        <div id="nav-buttons">
+            <a href="/" class="btn nav-btn nav-btn-active">Home</a>
+            <a href="#" class="btn nav-btn">Contributors</a>
+            <a href="#" class="btn nav-btn">About Us</a>
+            <a href="#designs" class="btn" id="designs-btn">Designs</a>
+        </div>
+    </nav>
 
-  <body>
-    <header class="header">
-      <!-- header code starts -->
-      <div class="neon-btn">
-
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand header__logo" href="#"></a>
-          <button
-            class="navbar-toggler text-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="nav nav-pills justify-content-center mt-2"
-              id="pills-tab"
-              role="tablist"
-            >
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active text-light btn one"
-                  id="pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                >
-                  Home
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link text-light btn one "
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                >
-                  About Us
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link text-light btn one"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  Services
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link text-light btn one "
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  Design
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link text-light btn one"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  Team
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link text-light btn one"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  Contact Us
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-home"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-contact"
-                role="tabpanel"
-                aria-labelledby="pills-contact-tab"
-              >
-                ...
-              </div>
+    <header>
+        <div id="header-content">
+            <img id="illustration" src="/images/Illustration.png" alt="Illustration" width="385" height="275">
+            <div id="header-text">
+                <h1 id="header-title">UI-UX-Designs</h1>
+                <p id="header-subtitle">A project aimed at encouraging developers to create UI component.</p>
+                <a href="" id="contribute-btn" class="btn">Contribute</a>
             </div>
-          </div>
         </div>
-      </nav>
-
-      </div>
     </header>
-    <!-- header code ends -->
-    <h1 class="h1 mt-5">UI-UX-DESIGNS</h1>
-    <section class="banner">
 
+    <section id="designs">
+        <h1 id="designs-title">Designs</h1>
+        <div id="designs-grid">
 
-        <div>
-            <a href="Cards/index.html"><button class="btn">Cards</button></a>
+            <a href="/image-slider-Harvansh-1234/index.html" class="btn design-btn">
+                <div>
+                    <h1 class="design-btn-title">Image Slider</h1>
+                    <p class="design-btn-author">by Harvansh-1234</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
+            <a href="/Cards/index.html" class="btn design-btn">
+                <div>
+                    <h1 class="design-btn-title">Cards</h1>
+                    <p class="design-btn-author">by everyone</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
+            <a href="/Forms/index.html" class="btn design-btn">
+                <div>
+                    <h1 class="design-btn-title">Forms</h1>
+                    <p class="design-btn-author">by everyone</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
+            <a href="/Select User/index.html" class="btn design-btn">
+                <div id="design-btn-text">
+                    <h1 class="design-btn-title">Select User</h1>
+                    <p class="design-btn-author">by everyone</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
+            <a href="/Buttons/index.html" class="btn design-btn">
+                <div>
+                    <h1 class="design-btn-title">Buttons</h1>
+                    <p class="design-btn-author">by everyone</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
+            <a href="/testimonialUi/index.html" class="btn design-btn">
+                <div>
+                    <h1 class="design-btn-title">Testimonial UI</h1>
+                    <p class="design-btn-author">by everyone</p>
+                </div>
+                <img src="/images/lookup.png" alt="View Design" width="20" height="20">
+            </a>
+
         </div>
-        <div>
-            <a href="Forms/index.html"><button class="btn">Forms</button></a>
-        </div>
-        <div>
-            <a href="Select User/index.html"><button class="btn">Select User</button></a>
-        </div>
-        <div>
-            <a href="Buttons/index.html"><button class="btn">Buttons</button></a>
-        </div>
-        <div>
-
-            <a href="testimonialUi/index.html">testimonialUi</a>
-        </div>
-        </section>
-        <script src="main.js"></script>
-
-            <a href="image-slider-Harvansh-1234/index.html"><button class="btn">Image Slider</button></a>
-        </div>
-
-      <div>
-        <a href="Cards/index.html"><button class="btn">Cards</button></a>
-      </div>
-      <div>
-        <a href="Forms/index.html"><button class="btn">Forms</button></a>
-      </div>
-      <div>
-        <a href="Select User/index.html"
-          ><button class="btn">Select User</button></a
-        >
-      </div>
-      <div>
-        <a href="Buttons/index.html"><button class="btn">Buttons</button></a>
-      </div>
-
-
     </section>
-    <!-- bootstrap cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-  </body>
+    <footer>
+        <p>Made with ❤ by MrAfonso</p>
+    </footer>
+</body>
 </html>
