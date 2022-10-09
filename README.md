@@ -3,7 +3,10 @@
 The Repository is created to encourage developers to create UI component. This component is created in the main directory with the name of the component.
 If you want to create same component with different style make sure to use your name after name of directory.
 
-### This is for CSS lover who want to learn UI/UX Designs
+## This is for CSS lover who want to learn UI/UX Designs
+
+## Contribution
+You can check the `CONTRIBUTION.md` for guidelines for contribution.
 
 ## You can visit the site [UI/UX Design](https://surajondev.github.io/UI-UX-Design/)
 
