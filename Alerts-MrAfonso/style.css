@@ -118,3 +118,14 @@ section {
     scale: 1.025;
     transition-duration: 300ms;
 }
+
+footer {
+    padding-top: auto;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+}
