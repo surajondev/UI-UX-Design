@@ -208,3 +208,12 @@ h4{
     font-family: Verdana;
     font-size: 16px;
   }
+  .btn-color
+  {
+    transition: background-color  0.5s ease-out 0.2s;
+  }
+  .btn-color:hover
+  {
+    background-color: #324ebf;
+    
+  }
