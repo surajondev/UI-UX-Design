@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    padding: 0px 3rem 0px 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 80px;
+    border-bottom: 0.5px solid #555555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#title-alerts {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: black;
+}
+
+#author {
+    font-size: 0.85rem;
+    color: #7c7c7c;
+}
+
+section {
+    padding: 7rem 2rem 2rem 2rem;
+}
+.alert {
+    display: flex;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 1rem;
+}
+
+.icon {
+    margin-right: 0.75rem;
+    display: inline;
+    height: 1.25rem;
+    width: 1.25rem;
+    flex-shrink: 0;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.alert-info {
+    background-color: #bfdbfe;
+    color: #1e40af;
+}
+
+.alert-danger {
+    background-color: #fecaca;
+    color: #991b1b;
+}
+
+.alert-success {
+    background-color: #bbf7d0;
+    color: #166534;
+}
+
+.alert-warning {
+    background-color: #fef08a;
+    color: #854d0e;
+}
+
+.alert-dark {
+    background-color: #374151;
+    color: #d1d5db;
+}
+
+#logo {
+    object-fit: scale-down;
+    width: 200px;
+    height: 60px;
+}
+
+#back-btn {
+    font-size: medium;
+    text-decoration:none;
+    transition-duration: 300ms;
+    color: #6D4BFF;
+    text-align: center;
+    background-color: #D6CFF3;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #6D4BFF;
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+#back-btn:hover {
+    scale: 1.025;
+    transition-duration: 300ms;
+}
