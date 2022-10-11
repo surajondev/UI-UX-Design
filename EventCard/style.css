@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Montserrat";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: rgb(71 85 105);
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.event-card {
+  font-weight: 700;
+  width: 40%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 40px;
+}
+
+.event-card-time {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.event-card-heading {
+   font-size: 22px;
+   margin-bottom: 20px;
+   color: rgb(30 41 59);
+}
+
+.event-card-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.event-card-location span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.event-card-location--icon svg {
+  height: 25px;
+  width: 25px;
+}
+
+.event-card-attendee-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.event-card-attendee-btn a {
+  text-decoration: none;
+  background-color: #112152;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.event-card-attendee-btn a:hover {
+  background-color: #19327f;
+}
+
+.event-card-attendee-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  outline: 3px solid #fff;
+}
+
+.event-card-attendee-profile:not(:first-child) {
+  margin-left: -10px;
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    width: 75%;
+  }
+}
