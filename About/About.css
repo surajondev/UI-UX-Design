@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F0F0F0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+#logo {
+    object-fit: scale-down;
+    width: 200px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 80px;
+    border-bottom: 0.5px solid #555555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn {
+    font-size: medium;
+    text-decoration:none;
+    transition-duration: 300ms;
+}
+
+.nav-btn {
+    color: #9F9F9F;
+}
+
+.nav-btn:hover {
+    color: #444444;
+}
+
+.nav-btn-active {
+    color: #444444;
+}
+#nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1.5rem;
+}
+
+#designs-btn {
+    color: #FFFFFF;
+    background-color: #6D4BFF;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    border: 2px solid #D6CFF3;;
+}
+
+#designs-btn:hover {
+    scale: 1.025;
+    transition-duration: 300ms;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#header-content {
+    margin: 2rem 16rem 2rem 16rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+#illustration {
+    object-fit: scale-down;
+}
+#header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#header-title {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+#header-subtitle {
+    font-size: 1rem;
+}
+
+#contribute-btn {
+    color: #6D4BFF;
+    text-align: center;
+    background-color: #D6CFF3;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    border: 1px solid #6D4BFF;
+    width: 12rem;
+}
+
+#contribute-btn:hover {
+    scale: 1.025;
+    transition-duration: 300ms;
+}
+
+#designs {
+    background-color: #FFFFFF;
+    border-top: 0.5px solid #555555;
+    display: flex;
+    padding: 2rem 16rem 2rem 16rem;
+    flex-direction: column;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#designs-grid {
+    display: grid;
+    margin-top: 1.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#designs-title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.design-btn {
+    background-color: #F0F0F0;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem 0.55rem 0.5rem 0.55rem;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 300ms;
+    line-height: 1.15rem;
+}
+
+.design-btn:hover {
+    scale: 1.02;
+}
+
+.design-btn > img {
+    margin-right: 5px;
+}
+
+.design-btn-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2D2D2D;
+    padding-left: 2px;
+}
+/* About us  */
+
+.about-section{
+   
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    
+}
+.image{
+    float: left;
+    margin-left: 10px;
+     width: 40%; 
+
+}
+.inner-container{
+    width: 58%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+    margin-top: 80px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+} 
