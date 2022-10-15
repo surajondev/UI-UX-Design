@@ -207,13 +207,31 @@ header {
 }
 
 footer {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF;
     width: 100%;
     padding: 1.5rem 0;
     text-align: center;
-    color: #535353;
+    color: #535353; */
+
+    width: 100%;
+    font-family: 'Libre Bodoni', serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 2%;
 }
 
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color: skyblue;
+}
+
+.fa-instagram{
+    color: #9900F0;
+}
 
 @media (min-width: 768px) {
     #designs {
