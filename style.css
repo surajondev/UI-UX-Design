@@ -13,6 +13,7 @@ html {
 }
 
 body {
+   
     background-color: #F0F0F0;
 }
 
@@ -206,5 +207,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #535353;
+    color: black;
+}
+
+.footer{
+    background-color: rgb(174, 176, 180);
+    height: 100px;
+    opacity: 80%;
+
 }
