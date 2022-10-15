@@ -162,11 +162,11 @@ header {
 .design-btn {
     font-size: 20px;
     font-weight: 600;
-    background-color:#b8aaee;
+    background-color:#c6c5c9;
     color:white;
     text-align: center;
     margin: 1rem;
-    padding:20px 20px;
+    padding:50px 10px;
     border-radius:30px;
     transition: 0.5s;
     /* border: 3px solid rgb(132, 50, 248); */
