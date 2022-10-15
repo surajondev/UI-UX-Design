@@ -217,3 +217,41 @@ h4{
     background-color: #324ebf;
     
   }
+  .btn1:hover{
+    color: #007BFF;
+    border: 1px solid #324ebf;
+  }
+  .btn2:hover{
+    color: #6c757d;
+    border: 1px solid #6c757d;
+  }
+  .btn3:hover{
+    color: #28A745;
+    border: 1px solid #28A745;
+  }
+  .btn4:hover{
+    color: #DC3545;
+    border: 1px solid #DC3545;
+  }
+  .btn5:hover{
+    color: #FFC107;
+    border: 1px solid #FFC107;
+  }
+  .btn6:hover{
+    color: #17A2BB;
+    border: 1px solid #17A2BB;
+  }
+  .btn7:hover{
+    color: #6c757d;
+    border: 1px solid #6c757d;
+  }
+  .btn8:hover{
+    color: #343A40;
+    border: 1px solid #343A40;
+  }
+  .btn9:hover{
+    color: black;
+  }
+  .btn-hover:hover{
+    background-color: white;
+  }
