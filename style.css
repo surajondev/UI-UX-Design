@@ -69,16 +69,22 @@ nav {
 }
 
 #designs-btn {
-    color: #FFFFFF;
-    background-color: #6D4BFF;
-    padding: 10px 25px 10px 25px;
-    border-radius: 50px;
-    border: 2px solid #D6CFF3;;
+    font-size: 20px;
+    font-weight: 400;
+    background:linear-gradient(to right, rgb(114, 54, 188) , rgb(74, 101, 234));
+    color:white;
+    text-align: center;
+    margin: 1rem;
+    padding:10px 10px;
+    border-radius:500px;
+    transition: 0.5s;
+    border:2px solid #b8aaee;
 }
 
 #designs-btn:hover {
-    scale: 1.025;
-    transition-duration: 300ms;
+    background-color:blueviolet;
+    color:white;
+    box-shadow: 5px 5px 1px darkblue;
 }
 
 header {
@@ -114,18 +120,24 @@ header {
 }
 
 #contribute-btn {
-    color: #6D4BFF;
+   
+    font-size: 20px;
+    font-weight: 600;
+    background:linear-gradient(to right, rgb(158, 108, 233),rgb(53, 81, 223),rgb(75, 133, 200));
+    color:white;
     text-align: center;
-    background-color: #D6CFF3;
-    padding: 10px 25px 10px 25px;
-    border-radius: 50px;
-    border: 1px solid #6D4BFF;
-    width: 12rem;
+    margin: 1rem;
+    padding:20px 20px;
+    border-radius:500px;
+    transition: 0.2s;
+    border: 2px solid white;
 }
 
+
 #contribute-btn:hover {
-    scale: 1.025;
-    transition-duration: 300ms;
+    background:linear-gradient(to right,rgb(65, 103, 228),rgb(43, 155, 235),rgb(85, 193, 239));
+    color:white;
+    box-shadow: 5px 5px 1px darkblue;
 }
 
 #designs {
@@ -154,37 +166,43 @@ header {
 }
 
 .design-btn {
-    background-color: #F0F0F0;
-    border: 1px solid #959595;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    padding: 0.7rem 0.55rem 0.5rem 0.55rem;
-    justify-content: space-between;
-    align-items: center;
-    transition-duration: 300ms;
-    line-height: 1.15rem;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#b8aaee;
+    color:white;
+    text-align: center;
+    margin: 1rem;
+    padding:20px 20px;
+    border-radius:30px;
+    transition: 0.5s;
+    /* border: 3px solid rgb(132, 50, 248); */
+    
 }
 
 .design-btn:hover {
     scale: 1.02;
+    background-color:rgb(141, 156, 241);
+    color:white;
+    box-shadow: 4px 4px 1px darkblue;
+    border: 3px solid white;
 }
 
 .design-btn > img {
     margin-right: 5px;
+    
 }
 
 .design-btn-title {
     font-size: 1.2rem;
-    font-weight: 400;
-    color: #2D2D2D;
+    font-weight: 600;
+    color: White;
     padding-left: 2px;
 }
 
 .design-btn-author {
     font-size: 0.65rem;
     font-weight: 300;
-    color: #939393;
+    color: black;
     padding-left: 2px;
 }
 
