@@ -31,6 +31,8 @@ header{
     border-radius : 2em;
     background-color: white;
     /* //added the box box-shadow: ; */
+}
+.container:hover{
     box-shadow: -6px -6px 20px rgb(230, 130, 130), 6px 6px 20px rgba(231, 21, 21, 0.1);
 
 }
@@ -66,8 +68,7 @@ img{
     border-radius : 50%;
     margin : auto ;
     display : block;
-    /* box-shadow : 0.2rem 0.2rem 0.5rem lightgrey */
-    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow : 0 0.2rem 0.5rem rgb(255,192,203), 0 3px 20px 0 rgb(255,192,203);
 }
 
 
@@ -84,7 +85,7 @@ h2{
 }
 
 h4{
-    color : darkgray;
+    color:deeppink;
     margin : 0 0;
     padding : 0 0;
 }
@@ -96,12 +97,16 @@ button {
 }
 
 .btn{
-    background-image : linear-gradient(to right, purple,  blue);
+    background-image : linear-gradient(to left, deeppink,  pink);
     color : white;
     padding : 0.2rem 2rem;
     font-size : 1.5em;
     border : none;
     border-radius : 6rem;
-    box-shadow : 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    box-shadow : 0 0.4rem 0.5rem rgb(255,192,203), 0 5px 18px 0 rgb(255,192,203);
 
+}
+a{
+        text-decoration: none;
+
+}
