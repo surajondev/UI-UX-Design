@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-container{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 0%;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  gap: 30px;
+  column-gap: 130px;
+  row-gap: 50px;    
+}
+
+.card{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.8s;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  
+}
+
+.card:hover{
+    box-shadow: 0 16px 24px 10px rgba(0,0,0,0.5);
+    width: 230px;
+    height: 280px;
+    cursor: pointer;
+
+}
+
+
+.card img{
+    transition: 0.8s;
+    width: 200px;
+    height: 250px;
+}
+
+.card img:hover{
+    width: 230px;
+    height: 280px;
+    cursor: pointer;
+}
+.card img:active{
+    display: none;
+}
