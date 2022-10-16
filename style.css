@@ -78,7 +78,6 @@ nav {
     padding:10px 10px;
     border-radius:500px;
     transition: 0.5s;
-    border:2px solid #b8aaee;
 }
 
 #designs-btn:hover {
@@ -120,7 +119,7 @@ header {
 }
 
 #contribute-btn {
-   
+
     font-size: 20px;
     font-weight: 600;
     background:linear-gradient(to right, rgb(158, 108, 233),rgb(53, 81, 223),rgb(75, 133, 200));
@@ -175,8 +174,10 @@ header {
     padding:20px 20px;
     border-radius:30px;
     transition: 0.5s;
+    border: 1.5px solid black;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
     /* border: 3px solid rgb(132, 50, 248); */
-    
+
 }
 
 .design-btn:hover {
@@ -189,7 +190,7 @@ header {
 
 .design-btn > img {
     margin-right: 5px;
-    
+
 }
 
 .design-btn-title {
@@ -197,6 +198,7 @@ header {
     font-weight: 600;
     color: White;
     padding-left: 2px;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
 }
 
 .design-btn-author {
