@@ -78,6 +78,7 @@ nav {
     padding:10px 10px;
     border-radius:500px;
     transition: 0.5s;
+    border:2px solid #b8aaee;
 }
 
 #designs-btn:hover {
