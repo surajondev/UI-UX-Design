@@ -42,11 +42,11 @@ nav {
 }
 
 .nav-btn {
-    color: #9F9F9F;
+    color:  #444444;
 }
 
 .nav-btn:hover {
-    color: #444444;
+    color: #6D4BFF;
 }
 
 .nav-btn-active {

@@ -217,3 +217,8 @@ h4{
     background-color: #324ebf;
     
   }
+
+  .btn-disable{
+    opacity: 0.6;
+  cursor: not-allowed;
+  }
