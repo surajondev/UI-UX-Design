@@ -13,8 +13,15 @@ html {
 }
 
 body {
-   
     background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #FFFFFF;
+    flex: 1;
 }
 
 #logo {
@@ -87,9 +94,9 @@ header {
 }
 
 #header-content {
-    margin: 2rem 16rem 2rem 16rem;
+    margin: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
@@ -136,10 +143,9 @@ header {
 #designs {
     background-color: #FFFFFF;
     border-top: 0.5px solid #555555;
-    display: flex;
-    padding: 2rem 16rem 2rem 16rem;
-    flex-direction: column;
+    padding: 2rem;
 }
+
 
 .sticky {
     position: fixed;
@@ -150,7 +156,7 @@ header {
 #designs-grid {
     display: grid;
     margin-top: 1.25rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -162,11 +168,11 @@ header {
 .design-btn {
     font-size: 20px;
     font-weight: 600;
-    background-color:#c6c5c9;
+    background-color:#b8aaee;
     color:white;
     text-align: center;
     margin: 1rem;
-    padding:50px 10px;
+    padding:20px 20px;
     border-radius:30px;
     transition: 0.5s;
     /* border: 3px solid rgb(132, 50, 248); */
@@ -201,18 +207,45 @@ header {
 }
 
 footer {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF;
     width: 100%;
-    padding-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #535353; */
+
+    width: 100%;
+    font-family: 'Libre Bodoni', serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 2%;
 }
 
-.footer{
-    background-color: rgb(174, 176, 180);
-    height: 100px;
-    opacity: 80%;
+.fa-facebook{
+    color: blue;
+}
 
+.fa-twitter{
+    color: skyblue;
+}
+
+.fa-instagram{
+    color: #9900F0;
+}
+
+@media (min-width: 768px) {
+    #designs {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 16rem 2rem 16rem;
+    }
+
+    #designs-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #header-content {
+        margin: 2rem 16rem 2rem 16rem;
+        flex-direction: row;
+    }
 }
