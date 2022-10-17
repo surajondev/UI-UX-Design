@@ -1,0 +1,98 @@
+body {
+  font-family: "Poppins", sans-serif;
+
+  color: #b3afbf;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+.email-signature {
+  width: 400px;
+  /* max-width: 400px; */
+  display: flex;
+  background-color: #222;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.7);
+}
+
+.email-signature img {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  border: none;
+  margin-top: 10px;
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 30px;
+  line-height: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.profile-intro {
+  font-size: 0.9rem;
+}
+
+.profile-post {
+  font-size: 0.8rem;
+}
+
+.profile-tag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-status {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profile-btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: 1px solid #7ce3ff;
+  font-weight: bold;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: 0.2s;
+  background: transparent;
+  border-color: #7ce3ff;
+  color: #7ce3ff;
+}
+.btn:hover {
+  background: #7ce3ff;
+  color: #222;
+}
+@media only screen and (max-width: 468px) {
+  /* For mobile phones: */
+  .email-signature {
+    flex-direction: column;
+    margin: 0.5rem;
+    gap: 0rem;
+  }
+  .email-signature img {
+    width: 40%;
+  }
+}
