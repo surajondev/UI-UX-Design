@@ -86,6 +86,8 @@ footer {
     justify-content: center;
     align-items: center;
     color: #535353;
+    position: fixed;
+    bottom: 0;
 }
 
 #card {

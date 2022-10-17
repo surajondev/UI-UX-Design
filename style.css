@@ -223,15 +223,11 @@ footer {
 
 .fa-facebook{
     color: blue;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #535353;
 }
 
-.fa-twitter{
-    color: skyblue;
-}
-
-.fa-instagram{
-    color: #9900F0;
-}
 
 @media (min-width: 768px) {
     #designs {
@@ -249,3 +245,4 @@ footer {
         flex-direction: row;
     }
 }
+
