@@ -219,6 +219,16 @@ footer {
     padding: 5px;
     font-size: 1rem;
     margin: 2%;
+
+}
+
+.fa-facebook{
+    color: blue;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #535353;
+
+
 }
 
 .fa-facebook{
@@ -249,3 +259,4 @@ footer {
         flex-direction: row;
     }
 }
+
