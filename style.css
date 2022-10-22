@@ -135,62 +135,52 @@ header {
     transition: 0.2s;
     border: 2px solid white;
 }
-
-
 #contribute-btn:hover {
     background: white;
-    /* color:linear-gradient(to right, rgb(158, 108, 233),rgb(53, 81, 223),rgb(75, 133, 200)); */
     color:black;
-    
     box-shadow: 5px 5px 1px rgb(142, 142, 247);
 }
-
 #designs {
     background-color: #FFFFFF;
     border-top: 0.5px solid #555555;
     padding: 2rem;
 }
-
-
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
-
 #designs-grid {
     display: grid;
     margin-top: 1.25rem;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-
 #designs-title {
     font-size: 2rem;
-    font-weight: 200;
-    
+    font-weight: 200;   
 }
-
 .design-btn {
     font-size: 20px;
     font-weight: 500;
-    /* background-color:#b8aaee; */
-    background-color: rgb(95, 95, 218);
+    background-color: rgb(165, 165, 239);
     color:white;
     text-align: center;
+    width: 15em;
     margin: 1rem;
+    padding-left: 2em;
     padding:14px 12px;
-    border-radius:1.7em;
+    border-radius:0.7em;
     transition: 0.5s;
-    
 }
 
 .design-btn:hover {
     scale: 1.02;
-    background-color:rgb(134, 152, 244);
-    color:white;
-    box-shadow: 4px 4px 1px rgb(105, 105, 216);
-    border: 3px solid white;
+    width: 15.5em;
+    border-radius: 0.9em;
+    background-color:rgb(151, 163, 221);
+    box-shadow: 4px 4px 1px rgb(128, 128, 216);
+    border: 1px solid white;
 }
 
 .design-btn > img {
@@ -205,7 +195,7 @@ header {
 }
 
 .design-btn-author {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 300;
     color: black;
     padding-left: 2px;
@@ -220,7 +210,12 @@ footer {
     padding: 2%;
 
 }
-
+.footer-header{
+    color: #4534c7;
+}
+a{
+    text-decoration: none;
+}
 .fa-facebook{
     color: blue;
     padding: 1.5rem 0;
@@ -246,7 +241,7 @@ footer {
     color: #9900F0;
 }
 .fa-instagram:hover{
-    color: #7b16b5;
+    color: #4c106f;
 }
 
 
@@ -269,4 +264,3 @@ footer {
         flex-direction: row;
     }
 }
-
