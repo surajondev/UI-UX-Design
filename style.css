@@ -67,24 +67,27 @@ nav {
     gap: 2rem;
     margin-right: 1.5rem;
 }
-
 #designs-btn {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    background:linear-gradient(to right, rgb(114, 54, 188) , rgb(74, 101, 234));
+    background:linear-gradient(to right, rgb(133, 84, 193) , rgb(79, 106, 243));
     color:white;
     text-align: center;
-    margin: 1rem;
-    padding:10px 10px;
-    border-radius:500px;
+    /* margin: 1rem; */
+    /* padding:12px 12px; */
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius:1.5em;
     transition: 0.5s;
-    border:2px solid #b8aaee;
+    border:1px solid #b8aaee;
 }
 
 #designs-btn:hover {
-    background-color:blueviolet;
-    color:white;
-    box-shadow: 5px 5px 1px darkblue;
+    background: white;
+    color:darkblue;
+    
 }
 
 header {
@@ -122,12 +125,12 @@ header {
 #contribute-btn {
    
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     background:linear-gradient(to right, rgb(158, 108, 233),rgb(53, 81, 223),rgb(75, 133, 200));
     color:white;
     text-align: center;
     margin: 1rem;
-    padding:20px 20px;
+    padding:15px 10px;
     border-radius:500px;
     transition: 0.2s;
     border: 2px solid white;
@@ -135,9 +138,11 @@ header {
 
 
 #contribute-btn:hover {
-    background:linear-gradient(to right,rgb(65, 103, 228),rgb(43, 155, 235),rgb(85, 193, 239));
-    color:white;
-    box-shadow: 5px 5px 1px darkblue;
+    background: white;
+    /* color:linear-gradient(to right, rgb(158, 108, 233),rgb(53, 81, 223),rgb(75, 133, 200)); */
+    color:black;
+    
+    box-shadow: 5px 5px 1px rgb(142, 142, 247);
 }
 
 #designs {
@@ -162,34 +167,34 @@ header {
 
 #designs-title {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 200;
+    
 }
 
 .design-btn {
     font-size: 20px;
-    font-weight: 600;
-    background-color:#b8aaee;
+    font-weight: 500;
+    /* background-color:#b8aaee; */
+    background-color: rgb(95, 95, 218);
     color:white;
     text-align: center;
     margin: 1rem;
-    padding:20px 20px;
-    border-radius:30px;
+    padding:14px 12px;
+    border-radius:1.7em;
     transition: 0.5s;
-    /* border: 3px solid rgb(132, 50, 248); */
     
 }
 
 .design-btn:hover {
     scale: 1.02;
-    background-color:rgb(141, 156, 241);
+    background-color:rgb(134, 152, 244);
     color:white;
-    box-shadow: 4px 4px 1px darkblue;
+    box-shadow: 4px 4px 1px rgb(105, 105, 216);
     border: 3px solid white;
 }
 
 .design-btn > img {
     margin-right: 5px;
-    
 }
 
 .design-btn-title {
@@ -207,18 +212,12 @@ header {
 }
 
 footer {
-    /* background-color: #FFFFFF;
-    width: 100%;
-    padding: 1.5rem 0;
-    text-align: center;
-    color: #535353; */
-
     width: 100%;
     font-family: 'Libre Bodoni', serif;
     text-align: center;
     padding: 5px;
     font-size: 1rem;
-    margin: 2%;
+    padding: 2%;
 
 }
 
@@ -227,22 +226,33 @@ footer {
     padding: 1.5rem 0;
     text-align: center;
     color: #535353;
-
-
 }
 
 .fa-facebook{
     color: blue;
+}
+.fa-facebook:hover{
+    color: rgb(80, 80, 205);
 }
 
 .fa-twitter{
     color: skyblue;
 }
 
+.fa-twitter:hover{
+    color: rgb(113, 179, 206);
+}
 .fa-instagram{
     color: #9900F0;
 }
+.fa-instagram:hover{
+    color: #7b16b5;
+}
 
+
+.fa-instagram{
+    color: #9900F0;
+}
 @media (min-width: 768px) {
     #designs {
         display: flex;
