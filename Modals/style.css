@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  color: rgb(17 24 39);
+   height: 100%;
+   background-color: rgba(0,0,0, 0.8)
+}
+
+.container {
+  font-family: "Montserrat";
+  width: 100%;
+  display: flex;
+  color: rgb(75 85 99);
+justify-content: center;
+
+}
+
+.card {
+  width: 30%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  z-index: 999;
+}
+
+.card-modal-close-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(148 163 184);
+  margin-bottom: 30px;
+}
+.card-modal-close-btn-icon {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(241 245 249);
+  line-height: 0;
+  
+}
+.card-modal-close-btn svg {
+  height: 25px;
+}
+
+h6 {
+  font-size: 24px;
+  font-family: serif;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.card-modal-description {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.card-modal-field-label {
+  margin-bottom: 7px;
+}
+
+.card-modal-field-label label {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
+input {
+  padding: 10px;
+  border: 1px solid rgb(203 213 225);
+  border-radius: 5px;
+  width: 75%;
+  margin-right: 5px;
+}
+button {
+  width: 20%;
+  border: none;
+  padding: 10px;
+  background-color: #e23a5e;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 1280px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media (max-width: 546px) {
+  .card {
+    width: 100%;
+    padding: 10px;
+  }
+  
+}
+
