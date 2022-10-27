@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  color: rgb(17 24 39);
+   height: 100%;
+}
+
+.container {
+  font-family: "Montserrat";
+  width: 100%;
+  display: flex;
+  color: rgb(75 85 99);
+justify-content: center;
+}
+
+.card-pop-up {
+  width: 30%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 20px;
+}
+
+.card-pop-up-close-btn {
+  color: #c0c5cb;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+.card-pop-up-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-pop-up-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.card-pop-up-btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 30px;
+  font-size: 12px;
+  background-color: #ed6755;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: background-color 0.3s;
+}
+
+.card-pop-up-btn a:hover {
+  background-color: #ed5844;
+}
