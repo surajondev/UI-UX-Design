@@ -225,23 +225,33 @@ a{
 
 .fa-facebook{
     color: blue;
+    transition: 0.4s;
 }
 .fa-facebook:hover{
-    color: rgb(80, 80, 205);
+    color: grey;
+    transform: scale(1.5);
 }
 
 .fa-twitter{
     color: skyblue;
+    transition: 0.4s;
+
 }
 
 .fa-twitter:hover{
     color: rgb(113, 179, 206);
+    transform: scale(1.5);
+
 }
 .fa-instagram{
     color: #9900F0;
+    transition: 0.4s;
+
 }
 .fa-instagram:hover{
     color: #4c106f;
+    transform: scale(1.5);
+
 }
 
 
@@ -263,4 +273,9 @@ a{
         margin: 2rem 16rem 2rem 16rem;
         flex-direction: row;
     }
+}
+
+.fb:hover{
+   
+    
 }
