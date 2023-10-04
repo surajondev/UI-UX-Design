@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pricing Table</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #ddefef;
+                margin: 0;
+            }
+
+            .pricing-table {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .price-card {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                width: 300px;
+                margin: 0 20px;
+                transition: transform 0.3s ease-in-out,
+                    box-shadow 0.3s ease-in-out;
+            }
+
+            .price-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .price-title {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .price {
+                font-size: 36px;
+                color: #007bff;
+                margin: 10px 0;
+            }
+
+            .features {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .features li {
+                margin: 10px 0;
+                color: #333;
+            }
+
+            .btn {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: block;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pricing-table">
+            <div class="price-card">
+                <div class="price-title">Basic Plan</div>
+                <div class="price">&#8377;199/month</div>
+                <ul class="features">
+                    <li>
+                        <span class="checkmark">&#10003;</span> All course
+                        materials
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Basic quizzes
+                        and assignments
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Email support
+                    </li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="price-card">
+                <div class="price-title">Premium Plan</div>
+                <div class="price">&#8377;599/month</div>
+                <ul class="features">
+                    <li>
+                        <span class="checkmark">&#10003;</span> Advanced courses
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Personalized
+                        assignment feedback
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> 24/7 priority
+                        support
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Chatbot
+                        assistance
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Certification
+                        upon completion
+                    </li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="price-card">
+                <div class="price-title">Pro Plan</div>
+                <div class="price">&#8377;399/month</div>
+                <ul class="features">
+                    <li>
+                        <span class="checkmark">&#10003;</span> Intermediate
+                        courses
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Standard
+                        assignments and quizzes
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Regular email
+                        support
+                    </li>
+                    <li>
+                        <span class="checkmark">&#10003;</span> Certificate of
+                        completion
+                    </li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+    </body>
+</html>
