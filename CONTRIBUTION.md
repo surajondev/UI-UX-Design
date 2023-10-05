@@ -24,7 +24,7 @@
 ## How to Contribute? ✍
 
 ### 1. Fork the Project 🍴
-Fork this repository and make changes in code as required. You can change it online or by cloning it in your device. Then Pust it on your Forked Repo for further Actions. Do not use special characters in the template above.
+Fork this repository and make changes in code as required. You can change it online or by cloning it in your device. Then Push it on your Forked Repo for further Actions. Do not use special characters in the template above.
 
 ![forked](https://user-images.githubusercontent.com/63325246/138092106-83ca7ed0-1ec3-4d01-a90c-ae3362bef4f5.jpg)
 
