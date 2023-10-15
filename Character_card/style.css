@@ -1,0 +1,132 @@
+:root {
+    --timing: 400ms;
+    --rotation: 20deg;
+  }
+  
+  html {
+    color-scheme: dark;
+  }
+  body{
+    display: grid;
+    grid: auto / auto auto auto;
+    place-content: center;
+    min-height: 100vh;
+  }
+  .heading{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+  }
+  .heading h1{
+    font-size: 40px;
+  }
+  .container {
+    margin:20px;
+    perspective: 1000px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .character {
+    width: 250px;
+    margin: 20px;
+    aspect-ratio: 9 / 16;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate var(--timing) ease;
+  }
+  
+  .character:hover {
+    rotate: x var(--rotation);
+  }
+  
+  .character::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    background-image: radial-gradient(circle, transparent 150px, black);
+    opacity: 0;
+    transition: opacity var(--timing);
+  }
+  
+  .character:hover::before {
+    opacity: 1;
+  }
+  
+  .character::after {
+    content: "";
+    position: absolute;
+    inset: 80% 0.5rem 0.5rem;
+    translate: 0;
+    transform: translateZ(-100px);
+    background: black;
+    filter: blur(1rem);
+    z-index: 1;
+    transition: rotate var(--timing), translate var(--timing);
+  }
+  
+  .character:hover::after {
+    rotate: x calc(var(--rotation) * -1);
+    translate: 0 60px;
+  }
+  
+  .bg-image {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .logo-1, .logo-2,
+  .front-image-1, .front-image-2 {
+    position: absolute;
+  }
+  
+  .logo-1, .logo-2 {
+    z-index: 1000;
+    width: 65%;
+    scale: 1.125;
+    margin-inline: auto;
+    inset: auto 0 2rem;
+    
+    transition: var(--timing);
+  }
+  .logo-1{
+    translate: 0rem 3.5rem;
+  }
+  .character:hover .logo-1  {
+    transform: translateY(-2rem) translateZ(20px);
+    rotate: x calc(var(--rotation) * -1);
+  }
+  .character:hover .logo-2{
+    transform: translateY(-2rem) translateZ(20px);
+    rotate: x calc(var(--rotation) * -1);
+  }
+  .front-image-1 {
+    scale: 1.6;
+    transform-origin: bottom;
+    opacity: 0;
+    z-index: 100;
+    transition: var(--timing);
+    translate: 0rem 10rem;
+  }
+
+  .front-image-2 {
+    scale: 1.125;
+    transform-origin: bottom;
+    opacity: 0;
+    z-index: 100;
+    transition: var(--timing);
+    translate: 1rem 0;
+  }
+  
+  .character:hover .front-image-1, .character:hover .front-image-2{
+    opacity: 1;
+    transform: translateY(-1.5rem) translateZ(-10px);
+    rotate: x calc(var(--rotation) * -1);
+  }
+  
