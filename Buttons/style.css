@@ -69,7 +69,6 @@ h4{
     text-align: left;
     padding-left: 50px;
 }
-
 .btn {
     border-radius: 5px;
     color: white;
@@ -85,7 +84,19 @@ h4{
     border: none;
     cursor: pointer;
   }
-
+#back-btn {
+    font-size: medium;
+    text-decoration:none;
+    transition-duration: 300ms;
+    color: #6D4BFF;
+    text-align: center;
+    background-color: #D6CFF3;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #6D4BFF;
+    width: 12rem;
+    margin-bottom: 2rem;
+}
   .btn:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
