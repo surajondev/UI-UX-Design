@@ -1,68 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); 
-body{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
   font-family: 'Open Sans', sans-serif;
   background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   color: white;
 }
-f{
+
+f {
   font-family: 'Raleway', sans-serif;
 }
-input,textarea{
+
+input,
+textarea {
   border-radius: 25px;
   background: rgba(255, 255, 255, .7);
-	animation-fill-mode: blur(10px);
-	backdrop-filter: blur(10px);
+  animation-fill-mode: blur(10px);
+  backdrop-filter: blur(10px);
   min-height: 250px;
   min-width: 400px;
   color: black;
 }
+
 .rate {
   float: left;
   height: 46px;
   padding: 0 10px;
 }
-.rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
 }
-.rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
 }
-.rate:not(:checked) > label:before {
+
+.rate:not(:checked)>label:before {
   content: '	\272D';
 }
-.rate > input:checked ~ label {
-  color: yellow;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: yellow;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+
+.rate>input:checked~label {
   color: yellow;
 }
-#submit{
-  font-size:13.125px;
-  text-align:center;
-  line-height:26.25px;
-  letter-spacing:normal;
-  padding:8.96px;
-  background-color:#ff9900;
-  color:#f9fafb;
-}
-#submit:hover{
-  filter: contrast(200%);
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: yellow;
 }
 main {
   padding-top: 80px;
@@ -114,6 +105,133 @@ nav {
   margin-right: 1.5rem;
 }
 
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: yellow;
+}
 
+#heading {
+  font-size: 3rem;
+}
 
-/* star rating adapted from https://codepen.io/hesguru/pen/BaybqXv */ 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 20px;
+  border: grey;
+}
+
+.rate {
+  display: flex;
+}
+
+.rate input {
+  display: none;
+}
+
+.rate label {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s, box-shadow 0.3s;
+  transform-origin: left;
+}
+
+.rate label:before {
+  content: "\2605";
+}
+
+.rate input:checked~label {
+  color: #f90;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+#rating-div {
+  display: flex;
+  align-items: baseline;
+}
+
+button {
+  align-self: flex-end;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  font-size: large;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#feedback {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#feedback:hover {
+  cursor: text;
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 10px;
+  }
+
+  .rate label {
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 80%;
+  }
+}
+
+/* star rating adapted from https://codepen.io/hesguru/pen/BaybqXv */

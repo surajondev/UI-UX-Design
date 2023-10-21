@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./styles/player.css" rel="stylesheet" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="./scripts/videocontrol.js"></script>
+</head>
+
+<body>
+  
+  
+  <div class="headerContainer">
+    <h1>Custom Video Player</h1>
+  </div>
+  <div class="projectWrapper">
+  <div class="videoContainer">
+    <video id="video-player" width="100%"
+      poster="./assets/poster-img.jpg"
+      src="./assets/testMovie2.mp4"
+      muted="muted" loop="loop" autoplay="autoplay" playsinline="playsinline"></video>
+    <button onclick="PausePlay()" id="video-control" tabindex="0"
+      class="videoControls pauseVideoBtn --hide"></button>
+     
+  </div>
+ </div>
+  <script src="./scripts/playback.js"></script>
+  <div class="footerContainer">
+     <h2 style="margin-top:3rem;">by <a href="https://github.com/kttalley">Kristian Talley</a></h2>
+  </div>
+
+</body>
+</html>
