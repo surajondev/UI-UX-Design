@@ -39,6 +39,7 @@ nav {
     height: 80px;
     border-bottom: 0.5px solid #555555;
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
 }
@@ -85,6 +86,7 @@ nav {
 }
 
 #designs-btn:hover {
+
     background: white;
     color:darkblue;
     
@@ -144,6 +146,8 @@ header {
     background-color: #FFFFFF;
     border-top: 0.5px solid #555555;
     padding: 2rem;
+    width: 100%;
+    z-index: -1;
 }
 .sticky {
     position: fixed;
@@ -151,27 +155,32 @@ header {
     width: 100%;
 }
 #designs-grid {
+    
     display: grid;
     margin-top: 1.25rem;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    margin-left: 6rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
 }
 #designs-title {
     font-size: 2rem;
     font-weight: 200;   
+    display: flex;
+    justify-content: center;
 }
 .design-btn {
+    position: relative;
     font-size: 20px;
     font-weight: 500;
     background-color: rgb(165, 165, 239);
     color:white;
     text-align: center;
     width: 15em;
+    height: 5.5em;
     margin: 1rem;
-    padding-left: 2em;
     padding:14px 12px;
     border-radius:0.7em;
-    transition: 0.5s;
+    transition: 0.5@s ease;
 }
 
 .design-btn:hover {
@@ -184,7 +193,7 @@ header {
 }
 
 .design-btn > img {
-    margin-right: 5px;
+    margin-top: 0.5rem;
 }
 
 .design-btn-title {
@@ -202,6 +211,8 @@ header {
 }
 
 footer {
+    margin-top: 80rem;
+    position: absolute;
     width: 100%;
     font-family: 'Libre Bodoni', serif;
     text-align: center;
@@ -259,15 +270,15 @@ a{
     color: #9900F0;
 }
 @media (min-width: 768px) {
-    #designs {
+    /* #designs {
         display: flex;
         flex-direction: column;
         padding: 2rem 16rem 2rem 16rem;
-    }
+    } */
 
-    #designs-grid {
+    /* #designs-grid {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } */
 
     #header-content {
         margin: 2rem 16rem 2rem 16rem;
