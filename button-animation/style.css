@@ -1,0 +1,20 @@
+div {
+    font: 22px Arial;
+    display: block;
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    background: red; /* default color */
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+div:hover {
+    cursor: pointer;
+    background-position: left;
+}
