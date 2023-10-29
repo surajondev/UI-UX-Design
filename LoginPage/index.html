@@ -2,43 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/LoginPage/style.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <a href="./../UI-UX-Design/">
-            <img id="logo" src="/images/New-Logo.webp" alt="UI-UX-Designs Logo" width="143" height="82">
-        </a>
-        <div id="nav-buttons">
-            <a href="/" class="btn nav-btn nav-btn-active">Home</a>
-            <a href="#" class="btn nav-btn">Contributors</a>
-            <a href="#" class="btn nav-btn">About Us</a>
-            <a href="../LoginPage/index.html" class="btn nav-btn">Login</a>
-            <a href="./../UI-UX-Design/#designs" class="btn" id="designs-btn">Designs</a>
-        </div>
-    </nav>
-    <div class="center">
-        <h1>Login</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input type="text" required>
-                <label>Username</label>
-            </div>
-            <div class="txt_field">
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-                <input type="submit" required>
-                <div class="signup_link">
-                    Not a member?<a href="#">Sign Up</a>
+        <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-          
-        </form>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>
+            Created with <i class="fa fa-heart"></i> by
+            <a target="_blank" href="https://nirmalyax.dev">Nirmalya Mondal</a>
+        </p>
+    </footer>
 </body>
+
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
 </html>
