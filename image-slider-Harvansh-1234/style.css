@@ -1,3 +1,53 @@
+main {
+    padding-top: 80px;
+    background-color: #FFFFFF;
+    flex: 1;
+}
+
+
+#logo {
+    object-fit: scale-down;
+    width: 200px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 80px;
+    border-bottom: 0.5px solid #555555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn {
+    font-size: medium;
+    text-decoration:none;
+    transition-duration: 300ms;
+}
+
+.nav-btn {
+    color: #9F9F9F;
+}
+
+.nav-btn:hover {
+    color: #444444;
+}
+
+.nav-btn-active {
+    color: #444444;
+}
+#nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1.5rem;
+}
 .carousel-control-prev-icon{
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
@@ -7,6 +57,6 @@
     border-radius: 50%;
 }
 .carousel-inner{
-    background-size: cover;
+    background-size:auto;
     background-position: top;
 }
