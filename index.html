@@ -17,17 +17,35 @@
 </head>
 <body>
     <nav>
-        <a href="./../UI-UX-Design/">
-            <img id="logo" src="images/New-Logo.webp" alt="UI-UX-Designs Logo" width="143" height="82">
-        </a>
-        <div id="nav-buttons">
-            <a href="./index.html" class="btn nav-btn nav-btn-active">Home</a>
-            <a href="#" class="btn nav-btn">Contributors</a>
-            <a href="#" class="btn nav-btn">About Us</a>
-            <a href="./LoginPage/" class="btn nav-btn">Login</a>
-            <a href="./../UI-UX-Design/#designs" class="btn" id="designs-btn">Designs</a>
+        <div class="logo-container">
+            <a href="./../UI-UX-Design/">
+                <img id="logo" src="images/New-Logo.webp" alt="UI-UX-Designs Logo" width="143" height="82">
+            </a>
+        </div>
+        <div id="nav-and-menu">
+            <div id="nav-buttons">
+                <a href="./index.html" class="btn nav-btn nav-btn-active">Home</a>
+                <a href="#" class="btn nav-btn">Contributors</a>
+                <a href="#" class="btn nav-btn">About Us</a>
+                <a href="./LoginPage/" class="btn nav-btn">Login</a>
+                <a href="./../UI-UX-Design/#designs" class="btn" id="designs-btn">Designs</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </nav>
+
+    <div class="menu-overlay">
+        <a href="./index.html" class="btn nav-btn nav-btn-active">Home</a>
+        <a href="#" class="btn nav-btn">Contributors</a>
+        <a href="#" class="btn nav-btn">About Us</a>
+        <a href="./LoginPage/" class="btn nav-btn">Login</a>
+        <a href="./../UI-UX-Design/#designs" class="btn">Designs</a>
+    </div>
+
 
     <header id="header-content">
         <img id="illustration" src="images/Illustration.webp" alt="Illustration" width="385" height="275">
@@ -43,7 +61,6 @@
         <section id="designs">
             <h1 id="designs-title">Designs</h1>
             <div id="designs-grid">
-
                 <!-- Copy from here... -->
                 <a href="image-slider-Harvansh-1234/index.html" class="btn design-btn">
                     <div>
@@ -53,7 +70,7 @@
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
                 <!-- to here to create a new button -->
-
+        
                 <a href="Cards/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Cards</h1>
@@ -61,7 +78,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="Forms/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Forms</h1>
@@ -69,7 +86,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="Select User/index.html" class="btn design-btn">
                     <div id="design-btn-text">
                         <h1 class="design-btn-title">Select User</h1>
@@ -77,7 +94,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="Buttons/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Buttons</h1>
@@ -85,7 +102,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="testimonialUi/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Testimonial UI</h1>
@@ -93,7 +110,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="Alerts-MrAfonso/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Alerts</h1>
@@ -101,7 +118,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="Cards-MrAfonso/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Cards</h1>
@@ -109,7 +126,7 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="SearchBar/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Search Bar</h1>
@@ -118,14 +135,14 @@
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
                 
-		<a href="Subsrciption_Cards/index.html" class="btn design-btn">
+                <a href="Subsrciption_Cards/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Subscription Cards</h1>
                         <p class="design-btn-author">by Varun Mantri</p>
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
+        
                 <a href="VideoPlayer/index.html" class="btn design-btn">
                     <div>
                         <h1 class="design-btn-title">Video Player</h1>
@@ -133,14 +150,15 @@
                     </div>
                     <img src="images/lookup.webp" alt="View Design" width="20" height="20">
                 </a>
-
             </div>
+
         </section>
     </main>
     <footer class="" id="footer">
             <div class="col-about">
                 <h1 class="footer-header">MrAfonso</h1>
-                <p class="footer-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, provident.        </div>
+                <p class="footer-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, provident.        
+            </div>
 
             <div class="footer-text container-fluid">
                 <p>Reach us at</p>
@@ -159,5 +177,6 @@
                 <p>Made with ❤ by MrAfonso</p>
               </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
